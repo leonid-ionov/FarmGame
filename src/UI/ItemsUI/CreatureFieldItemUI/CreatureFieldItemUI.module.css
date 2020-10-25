@@ -1,0 +1,30 @@
+.creatureFieldItem {
+    width:95px;
+    height: 95px;
+    display: grid;
+    background-image: url("../../../Assets/Images/Menu/Grass.jpg");
+}
+
+.creatureFieldItem img{
+    width:95px;
+    height: 95px;
+    position: absolute;
+    z-index: 0;
+}
+.creatureFieldItem .harvest{
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    font-weight:bold
+}
+
+.creatureFieldItem .hunger {
+    color: red;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    font-weight:bolder;
+    font-size: 23px;
+}

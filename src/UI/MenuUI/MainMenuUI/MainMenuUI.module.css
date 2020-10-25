@@ -1,0 +1,14 @@
+.mainMenuUI {
+    display: grid;
+    grid-template-areas: 'img' 'btn';
+    justify-items: center;
+    grid-gap: 10px;
+}
+.mainMenuUI img {
+    grid-area: img;
+    width: 800px;
+
+}
+.mainMenuUI button{
+    grid-area: btn;
+}

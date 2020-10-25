@@ -1,0 +1,17 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas:
+'nav'
+'content ';
+  grid-template-rows: 60px 870px;
+}
+
+.app-wrapper-nav {
+  grid-area: nav;
+}
+
+.app-wrapper-content {
+  padding-top: 10px;
+  grid-area: content;
+  background-color: darkgrey;
+}

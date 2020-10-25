@@ -1,0 +1,22 @@
+.newGame {
+    display: grid;
+    grid-template-areas: 'creatures field menu';
+    grid-template-columns: 200px 1fr 500px;
+    grid-gap: 10px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.newGame .field {
+    grid-area: field;
+}
+
+.newGame .menu {
+    grid-area: menu;
+    height: 400px;
+}
+
+.newGame .creatures {
+    grid-area: creatures;
+    height: 420px;
+}

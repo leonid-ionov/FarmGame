@@ -1,0 +1,18 @@
+.creatureItem{
+    display:grid;
+    height: 105px;
+    width: 200px;
+    grid-template-areas: 'creature text';
+}
+
+.creatureItem .creature {
+    align-self: center;
+    justify-self: center;
+    height: 95px;
+    width: 95px;
+}
+
+.creatureItem .text {
+    align-self: center;
+    justify-self: center;
+}

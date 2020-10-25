@@ -1,0 +1,18 @@
+.goodsItem {
+    display:grid;
+    grid-template-areas: 'goods text';
+    height: 75px;
+    width: 200px;
+}
+
+.goodsItem .goods {
+    align-self: center;
+    justify-self: center;
+    height: 65px;
+    width: 70px;
+}
+
+.goodsItem .text {
+    align-self: center;
+    justify-self: center;
+}
