@@ -20,7 +20,7 @@
     height: 45px;
 }
 
-.creatureFieldItem .hunger {
+.creatureFieldItem .text {
     color: red;
     position: absolute;
     align-self: center;

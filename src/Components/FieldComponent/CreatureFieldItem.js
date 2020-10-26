@@ -14,7 +14,9 @@ class CreatureFieldItem extends React.Component {
     takeHarvestMethod = () => {
         this.props.takeHarvest(this.state.harvest)
         this.setState({harvest: null})
-        this.creatureGrowTimer()
+        if(!this.state.hunger) {
+            this.creatureGrowTimer()
+        }
     }
 
     creatureGrowTimer = () => {

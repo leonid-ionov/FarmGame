@@ -2,14 +2,14 @@
     display:grid;
     grid-template-areas: 'goods text';
     height: 75px;
-    width: 200px;
+    width: 220px;
 }
 
 .goodsItem .goods {
     align-self: center;
     justify-self: center;
     height: 65px;
-    width: 70%;
+    width: 65%;
 }
 
 .goodsItem .text {
