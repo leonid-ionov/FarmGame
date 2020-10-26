@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2cc4f4831335a53893329e0038af9108",
+    "revision": "1971342a5e4d6d9fe3205a550db4cf18",
     "url": "/FarmGame/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FarmGame/static/css/2.5f3a66ff.chunk.css"
   },
   {
-    "revision": "757855ff56522c7da2a6",
+    "revision": "aa36147ba929b6b53402",
     "url": "/FarmGame/static/css/main.6084db6a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FarmGame/static/js/2.20e8fc98.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "757855ff56522c7da2a6",
-    "url": "/FarmGame/static/js/main.c9939b3e.chunk.js"
+    "revision": "aa36147ba929b6b53402",
+    "url": "/FarmGame/static/js/main.68215c0f.chunk.js"
   },
   {
     "revision": "67eb342bff41e56311b5",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FarmGame/static/media/Eggs.95e7e033.png"
   },
   {
-    "revision": "c554611d72d42f645d889d0eb5436e25",
-    "url": "/FarmGame/static/media/Grain.c554611d.png"
+    "revision": "15c34a5020bcafe2a8dd46daba993952",
+    "url": "/FarmGame/static/media/Grain.15c34a50.png"
   },
   {
     "revision": "1e0581a75853fd4c0ec381b1eacaf318",
