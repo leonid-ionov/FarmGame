@@ -1,7 +1,8 @@
 .newGame {
     display: grid;
-    grid-template-areas: 'creatures field menu';
-    grid-template-columns: 200px 1fr 500px;
+    grid-template-areas: 'creaturesMenu field goodsMenu'
+                            'error field goodsMenu';
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 20px;
     justify-items: center;
@@ -11,12 +12,15 @@
     grid-area: field;
 }
 
-.newGame .menu {
-    grid-area: menu;
-    height: 400px;
+.newGame .goodsMenu {
+    grid-area: goodsMenu;
 }
 
-.newGame .creatures {
-    grid-area: creatures;
-    height: 420px;
+.newGame .creaturesMenu {
+    grid-area: creaturesMenu;
+    justify-self: center;
+}
+.newGame .error {
+    grid-area: error;
+    justify-self: center;
 }

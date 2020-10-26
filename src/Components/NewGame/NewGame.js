@@ -29,35 +29,39 @@ class NewGame extends React.Component {
                 }
             } catch (error) {
                 this.setState({error: error.message})
-                setTimeout(() => {this.setState({error:null})},10000)
                 this.props.chooseCreature(null)
             }
         }
     }
 
     feedCreatureMethod = (feedType) => {
-        if(this.props.selectedGoods.forFeed && feedType === this.props.selectedGoods.type) {
+        if (this.props.selectedGoods.forFeed && feedType === this.props.selectedGoods.type) {
             try {
                 this.props.feedCreatureChecker(feedType)
                 return true
-            }
-            catch (error) {
+            } catch (error) {
                 this.setState({error: error.message})
-                setTimeout(() => {this.setState({error:null})},10000)
-                this.props.chooseGoodsForAction(null,false,false)
+                this.props.chooseGoodsForAction(null, false, false)
                 return false
             }
         } else {
             this.setState({error: 'Choose feed'})
-            setTimeout(() => {this.setState({error:null})},10000)
             return false
+        }
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevState.error !== this.state.error) {
+            setTimeout(() => {
+                this.setState({error: null})
+            }, 3000)
         }
     }
 
     render() {
         return (
             <div className={s.newGame}>
-                <div className={s.creatures}>
+                <div className={s.creaturesMenu}>
                     <CreatureMenuUI creatureItems={this.props.creatureItems}
                                     selectedCreature={this.props.selectedCreature}
                                     chooseCreature={this.props.chooseCreature}
@@ -72,14 +76,15 @@ class NewGame extends React.Component {
                                  takeHarvest={this.props.takeHarvest}
                                  feedCreature={this.feedCreatureMethod.bind(this)}/>
                 </div>
-                <div className={s.menu}>
+                <div className={s.goodsMenu}>
                     <GoodsMenuUI sellItem={this.sellItem.bind(this)}
                                  selectedGoods={this.props.selectedGoods}
                                  goodsItems={this.props.goodsItems}
                                  chooseGoodsForAction={this.props.chooseGoodsForAction}
                                  chooseCreature={this.props.chooseCreature}/>
                 </div>
-                {this.state.error&&<Badge variant="warning"><h4>{this.state.error}</h4></Badge>}
+                {this.state.error &&
+                <div className={s.error}><Badge variant="warning"><h4>{this.state.error}</h4></Badge></div>}
             </div>
         )
     }

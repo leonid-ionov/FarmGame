@@ -6,8 +6,8 @@
 }
 .mainMenuUI img {
     grid-area: img;
-    width: 800px;
-
+    width: 950px;
+padding-top: 5px;
 }
 .mainMenuUI button{
     grid-area: btn;
