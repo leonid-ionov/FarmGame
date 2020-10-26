@@ -2,7 +2,6 @@ import EggsImage from '../Assets/Images/Goods/Eggs.png'
 import MoneyImage from '../Assets/Images/Goods/Money.png'
 import MilkImage from '../Assets/Images/Goods/Milk.png'
 import GrainImage from '../Assets/Images/Goods/Grain.png'
-import { harvestHasTaken } from './FieldReducer'
 
 let initialState = {
     money: {
@@ -15,7 +14,7 @@ let initialState = {
     },
     grain: {
         type: 'grain',
-        count: 0,
+        count: 2,
         price: null,
         image: GrainImage,
         sale: false,
@@ -32,7 +31,7 @@ let initialState = {
     milk: {
         type: 'milk',
         count: 0,
-        price: 60,
+        price: 70,
         image: MilkImage,
         sale: true,
         feed: false

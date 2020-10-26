@@ -5,72 +5,73 @@ import CreatureFieldItemUI from '../../UI/ItemsUI/CreatureFieldItemUI/CreatureFi
 class CreatureFieldItem extends React.Component {
     state = {
         growTime: 0,
-        hunger: false,
-        increased: false,
+        hungerTime: 0,
+        hunger: true,
         harvest: null
     }
 
     takeHarvestMethod = () => {
         this.props.takeHarvest(this.state.harvest)
-        this.setState({increased: false})
+        this.setState({harvest: null})
+        this.creatureGrowTimer()
     }
 
-    creatureGrow = () => {
-        let growTimePerPercent = this.props.creatureItem.growTime * 20,
-            count = this.state.growTime,
-            fullTime = this.props.creatureItem.feedTime * 1000
-        const creatureGrowTimer = setInterval(
-            () => {
+    creatureGrowTimer = () => {
+        let count = this.state.growTime
+        const growTimePerPercent = this.props.creatureItem.growTime * 20,
+            timerId = setInterval(
+                () => {
+                    count += 2
+                    this.setState({growTime: count})
+                    if (count === 100) {
+                        clearInterval(timerId)
+                        this.setState({
+                            growTime: 0,
+                            harvest: this.props.creatureItem.harvestType
+                        })
+                    }
+                    if (this.state.hungerTime >= 98) {
+                        clearInterval(timerId)
+                    }
+                }
+                , growTimePerPercent
+            )
+    }
+
+    hungerTimer = () => {
+        let count = this.state.hungerTime
+        const fullTimePerPercent = this.props.creatureItem.feedTime * 20,
+            timerId = setInterval(() => {
                 count += 2
-                this.setState({growTime: count})
+                this.setState({hungerTime: count})
                 if (count === 100) {
-                    clearInterval(creatureGrowTimer)
+                    clearInterval(timerId)
                     this.setState({
-                        growTime: 0,
-                        increased: true
+                        hunger: true,
+                        hungerTime: 0
                     })
                 }
-            }
-            , growTimePerPercent
-        )
-        if (!!this.props.creatureItem.feedType) {
-            setTimeout(() => {
-                clearInterval(creatureGrowTimer)
-                this.setState({
-                    hunger: true
-                })
-            }, fullTime)
-        }
+            }, fullTimePerPercent)
     }
 
     feedCreatureMethod = () => {
         if (this.props.feedCreature(this.props.creatureItem.feedType)) {
-            this.setState({hunger: false})
+            this.setState({
+                hunger: false
+            })
+            this.hungerTimer()
+            this.creatureGrowTimer()
         }
     }
 
     componentDidMount() {
-        if (!!this.props.creatureItem.feedType) {
-            this.setState({hunger: true})
-        } else {
-            this.creatureGrow()
-        }
-    }
+        if (!this.props.creatureItem.feedType) {
+            this.setState({
+                hunger: false
+            })
+            this.creatureGrowTimer()
+    }}
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        if (prevState.increased !== this.state.increased) {
-            if (this.state.increased) {
-                this.setState({harvest: this.props.creatureItem.harvestType})
-            } else if (!this.state.increased) {
-                this.creatureGrow()
-            }
-        }
-        if (prevState.hunger !== this.state.hunger) {
-            if (!this.state.hunger) {
-                this.creatureGrow()
-            }
-        }
-    }
 
     render() {
         return (
@@ -78,7 +79,8 @@ class CreatureFieldItem extends React.Component {
                 <CreatureFieldItemUI growTime={this.state.growTime}
                                      hunger={this.state.hunger}
                                      creatureImage={this.props.creatureItem.image}
-                                     increased={this.state.increased}
+                                     harvestImage={this.props.creatureItem.harvestImage}
+                                     harvest={this.state.harvest}
                                      feedCreature={this.feedCreatureMethod}
                                      takeHarvestMethod={this.takeHarvestMethod}/>
             </div>

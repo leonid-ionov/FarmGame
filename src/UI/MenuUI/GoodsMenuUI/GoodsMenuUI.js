@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap'
 import GoodsMenuItem from '../../../Components/GoodsComponent/GoodsMenuItem'
 
 
-const GoodsMenuUI = ({sellItem, selectedGoods,chooseGoodsForAction,chooseCreature, goodsItems}) => {
+const GoodsMenuUI = ({sellItem, selectedGoods, chooseGoodsForAction, chooseCreature, goodsItems}) => {
     return (
         <div className={s.goodsMenu}>
             {Object.keys(goodsItems).map(i => <div className={s.item}>
@@ -14,9 +14,12 @@ const GoodsMenuUI = ({sellItem, selectedGoods,chooseGoodsForAction,chooseCreatur
                                chooseGoodsForAction={chooseGoodsForAction}/></div>)}
 
             <div className={s.buttons}>
-                <Button onClick={() => sellItem()}
-                        disabled={!selectedGoods.forSale}
-                        variant="dark" size="lg">Sell</Button>
+                {selectedGoods.forFeed && <Button variant="dark"
+                                                  disabled={selectedGoods.forFeed} size='lg'>
+                                                  {'Touch creature to feed'}</Button>}
+                {selectedGoods.forSale && < Button onClick={() => sellItem()}
+                                                   disabled={!selectedGoods.forSale}
+                                                   variant='dark' size='lg'>Sell goods</Button>}
             </div>
         </div>
     )

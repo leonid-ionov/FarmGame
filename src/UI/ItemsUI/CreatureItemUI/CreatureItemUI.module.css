@@ -1,7 +1,7 @@
 .creatureItem{
     display:grid;
     height: 105px;
-    width: 200px;
+    width: 210px;
     grid-template-areas: 'creature text';
 }
 
@@ -13,6 +13,7 @@
 }
 
 .creatureItem .text {
+    width:100px;
     align-self: center;
     justify-self: center;
 }

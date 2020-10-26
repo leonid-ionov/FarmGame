@@ -5,18 +5,19 @@
     background-image: url("../../../Assets/Images/Menu/Grass.jpg");
 }
 
-.creatureFieldItem img{
+.creatureFieldItem .creature img{
     width:95px;
     height: 95px;
     position: absolute;
     z-index: 0;
 }
-.creatureFieldItem .harvest{
+.creatureFieldItem .harvest img{
     position: absolute;
+    z-index: 1;
     align-self: center;
     justify-self: center;
-    z-index: 1;
-    font-weight:bold
+    width: 40px;
+    height: 45px;
 }
 
 .creatureFieldItem .hunger {
