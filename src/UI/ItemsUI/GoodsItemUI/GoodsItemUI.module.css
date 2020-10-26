@@ -1,15 +1,15 @@
 .goodsItem {
     display:grid;
     grid-template-areas: 'goods text';
-    height: 75px;
-    width: 220px;
+    height: 100px;
+    width: 250px;
 }
 
 .goodsItem .goods {
     align-self: center;
     justify-self: center;
-    height: 65px;
-    width: 65%;
+    height: 90px;
+    width: 70%;
 }
 
 .goodsItem .text {

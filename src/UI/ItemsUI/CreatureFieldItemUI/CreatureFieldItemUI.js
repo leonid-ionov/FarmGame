@@ -10,8 +10,8 @@ const CreatureFieldItemUI = ({creatureImage, feedCreature, harvestImage, takeHar
             {!!harvest ?
                 <div onClick={() => takeHarvestMethod()} className={s.harvest}><img src={harvestImage} alt={''}/></div> :
                     message ? <div className={s.text} onClick={feedCreature}>{message}</div> :
-                    <CircularProgressbar value={growTime}
-                                         styles={buildStyles({trailColor: 'white', pathColor: 'black'})}/>}
+                    <CircularProgressbar className={s.progressBar} value={growTime}
+                                         styles={buildStyles({pathColor: '#ffd700'})}/>}
         </div>
     )
 }

@@ -8,8 +8,8 @@ function CreatureItemUI({creaturesImage, creatureType, creaturePrice, selectedCr
              style={creatureType === selectedCreature ? {border: '5px solid darkred'} : {border: '5px solid black'}}>
             <Image className={s.creature} src={creaturesImage}/>
             <div className={s.text}>
-                {!!creaturePrice ? <h6> {`Price: ${creaturePrice}`}</h6> :
-                    <h6>Remove creature</h6>}
+                {!!creaturePrice ? <h6> {`PRICE: ${creaturePrice}`}</h6> :
+                    <h6>REMOVE CREATURE</h6>}
             </div>
         </div>
     )

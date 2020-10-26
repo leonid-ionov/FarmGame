@@ -52,7 +52,7 @@ class CreatureFieldItem extends React.Component {
                     clearInterval(timerId)
                     this.setState({
                         hunger: true,
-                        message: 'Hunger!'
+                        message: 'HUNGER!'
                     })
                 }
             }, fullTimePerPercent)
@@ -62,7 +62,7 @@ class CreatureFieldItem extends React.Component {
         if (this.props.feedCreature(this.props.creatureItem.feedType)) {
             this.setState({
                 feedCount: this.state.feedCount + 1,
-                message: 'Om-Nom-nom'
+                message: 'YUMMY'
             })
             setTimeout(() => {
                 this.setState({

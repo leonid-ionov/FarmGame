@@ -1,3 +1,4 @@
-.emptyFieldItem img{
-    width:95px
+.emptyFieldItem {
+    width:100px;
+    height: 100px;
 }

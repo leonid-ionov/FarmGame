@@ -20,7 +20,7 @@ const NavbarUI = () => {
                      height="50" alt={''}/>
                 <Nav.Item className="mr-auto">
                     <Nav.Link as={NavLink} to={'/main-menu'}>
-                        <h4 style={{color:'darkgrey'}}>Main Menu</h4>
+                        <h4 style={{color:'darkgrey'}}>MAIN MENU</h4>
                     </Nav.Link>
                 </Nav.Item>
             </Navbar>

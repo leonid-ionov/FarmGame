@@ -1,13 +1,12 @@
 .creatureFieldItem {
-    width:95px;
-    height: 95px;
+    width:100px;
+    height: 100px;
     display: grid;
-    background-image: url("../../../Assets/Images/Menu/Grass.jpg");
 }
 
 .creatureFieldItem .creature img{
-    width:95px;
-    height: 95px;
+    width:100px;
+    height: 100px;
     position: absolute;
     z-index: 0;
 }
@@ -18,6 +17,7 @@
     justify-self: center;
     width: 40px;
     height: 45px;
+    padding-left: 3px;
 }
 
 .creatureFieldItem .text {
@@ -27,4 +27,10 @@
     justify-self: center;
     z-index: 1;
     font-weight:bolder;
+}
+
+.creatureFieldItem .progressBar{
+    width: 85px;
+    align-self: center;
+    justify-self: center;
 }
