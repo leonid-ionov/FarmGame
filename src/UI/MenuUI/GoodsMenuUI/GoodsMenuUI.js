@@ -18,7 +18,7 @@ const GoodsMenuUI = ({sellItem, selectedGoods, chooseGoodsForAction, chooseCreat
             <div className={s.buttons}>
                 {selectedGoods.forFeed && <Button variant="dark"
                                                   disabled={selectedGoods.forFeed} size='lg'>
-                                                  {'Click on a creature cell to feed'}</Button>}
+                                                  {'Click on a creature to feed'}</Button>}
                 {selectedGoods.forSale && < Button onClick={() => sellItem()}
                                                    disabled={!selectedGoods.forSale}
                                                    variant='dark' size='lg'>Sell goods</Button>}
