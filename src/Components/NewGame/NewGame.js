@@ -2,7 +2,12 @@ import React from 'react'
 import s from './NewGame.module.css'
 import FieldMenuUI from '../../UI/MenuUI/FieldMenuUI/FieldMenuUI'
 import GoodsMenuUI from '../../UI/MenuUI/GoodsMenuUI/GoodsMenuUI'
-import { buyCreatureChecker, feedCreatureChecker, sellItem, takeHarvest } from '../../Store/GoodsReducer'
+import {
+    buyCreatureChecker,
+    feedCreatureChecker,
+    sellItemChecker,
+    takeHarvest
+} from '../../Store/GoodsReducer'
 import { connect } from 'react-redux'
 import { chooseCreature, chooseGoodsForAction } from '../../Store/GameReducer'
 import CreatureMenuUI from '../../UI/MenuUI/СreatureMenuUI/CreaturesMenuUI'
@@ -13,7 +18,10 @@ class NewGame extends React.Component {
     state = {error: null}
     sellItem = () => {
         if (this.props.selectedGoods.forSale) {
-            this.props.sellItem(this.props.selectedGoods.type)
+           try {this.props.sellItemChecker(this.props.selectedGoods.type)}
+           catch (error) {
+               this.setState({error: error.message})
+           }
             this.props.chooseGoodsForAction(null, false, false)
         }
     }
@@ -34,7 +42,7 @@ class NewGame extends React.Component {
         }
     }
 
-    feedCreatureMethod = (feedType) => {
+    feedCreatureMethod = (feedType, creatureType) => {
         if (this.props.selectedGoods.forFeed && feedType === this.props.selectedGoods.type) {
             try {
                 this.props.feedCreatureChecker(feedType)
@@ -44,8 +52,11 @@ class NewGame extends React.Component {
                 this.props.chooseGoodsForAction(null, false, false)
                 return false
             }
+        } else if (creatureType === 'wheat') {
+            this.setState({error: 'WHEAT DOES NOT HUNGER'})
+            return false
         } else {
-            this.setState({error: 'Choose feed'})
+            this.setState({error: 'CHOOSE FEED'})
             return false
         }
     }
@@ -84,7 +95,7 @@ class NewGame extends React.Component {
                                  chooseCreature={this.props.chooseCreature}/>
                 </div>
                 {this.state.error &&
-                <div className={s.error}><Badge variant="warning"><h4>{this.state.error}</h4></Badge></div>}
+                <div className={s.error}><Badge variant="danger"><h4>{this.state.error}</h4></Badge></div>}
             </div>
         )
     }
@@ -98,7 +109,7 @@ const mapStateToProps = (state) => ({
         creatureItems: state.creaturesReducer
     }),
     actionCreators = {
-        sellItem, buyCreatureChecker,
+        sellItemChecker, buyCreatureChecker,
         chooseGoodsForAction, changeFieldItemType, chooseCreature,
         takeHarvest, feedCreatureChecker
     }

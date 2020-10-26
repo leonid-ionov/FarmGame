@@ -3,7 +3,7 @@
     grid-template-columns: repeat(8,101px);
     grid-template-rows: repeat(8,101px);
     background-image: url("../../../Assets/Images/Menu/Grass.jpg");
-    background-size: 768px;
+    background-size: auto;
 }
 
 .field .item {

@@ -59,7 +59,7 @@ class CreatureFieldItem extends React.Component {
     }
 
     feedCreatureMethod = () => {
-        if (this.props.feedCreature(this.props.creatureItem.feedType)) {
+        if (this.props.feedCreature(this.props.creatureItem.feedType, this.props.creatureItem.type)) {
             this.setState({
                 feedCount: this.state.feedCount + 1,
                 message: 'YUMMY'

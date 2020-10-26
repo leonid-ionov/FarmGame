@@ -100,13 +100,18 @@ export const sellItem = (itemForSale) => ({type: SELL_ITEM, itemForSale}),
             moneyCount = getState().goodsReducer.money.count
         if (moneyCount >= creaturePrice) {
             dispatch(buyCreature(creaturePrice))
-        } else throw new Error('Need more gold')
+        } else throw new Error('NEED MORE GOLD')
     },
     feedCreatureChecker = (feedType) => (dispatch, getState) => {
         const feedCount = getState().goodsReducer[feedType].count
         if (feedCount > 0) {
             dispatch(feedCreature(feedType))
-        } else throw new Error('Need more feed')
+        } else throw new Error('NEED MORE FEED')
+    },
+    sellItemChecker = (itemForSale) => (dispatch,getState) => {
+        if (!!getState().goodsReducer[itemForSale].count) {
+            dispatch(sellItem(itemForSale))
+        } else throw new Error('NOTHING TO SELL')
     }
 
 export default goodsReducer

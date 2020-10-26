@@ -1,16 +1,17 @@
 .creatureFieldItem {
-    width:100px;
+    width: 100px;
     height: 100px;
     display: grid;
 }
 
-.creatureFieldItem .creature img{
-    width:100px;
+.creatureFieldItem .creature img {
+    width: 100px;
     height: 100px;
     position: absolute;
     z-index: 0;
 }
-.creatureFieldItem .harvest img{
+
+.creatureFieldItem .harvest img {
     position: absolute;
     z-index: 1;
     align-self: center;
@@ -26,10 +27,12 @@
     align-self: center;
     justify-self: center;
     z-index: 1;
-    font-weight:bolder;
+    font-weight: bolder;
+    font-size: 18px;
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
 }
 
-.creatureFieldItem .progressBar{
+.creatureFieldItem .progressBar {
     width: 85px;
     align-self: center;
     justify-self: center;
