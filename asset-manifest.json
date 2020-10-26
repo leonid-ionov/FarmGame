@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/FarmGame/static/css/main.dca64303.chunk.css",
-    "main.js": "/FarmGame/static/js/main.90d0a943.chunk.js",
-    "main.js.map": "/FarmGame/static/js/main.90d0a943.chunk.js.map",
+    "main.css": "/FarmGame/static/css/main.6084db6a.chunk.css",
+    "main.js": "/FarmGame/static/js/main.c9939b3e.chunk.js",
+    "main.js.map": "/FarmGame/static/js/main.c9939b3e.chunk.js.map",
     "runtime-main.js": "/FarmGame/static/js/runtime-main.b79219f1.js",
     "runtime-main.js.map": "/FarmGame/static/js/runtime-main.b79219f1.js.map",
     "static/css/2.5f3a66ff.chunk.css": "/FarmGame/static/css/2.5f3a66ff.chunk.css",
     "static/js/2.20e8fc98.chunk.js": "/FarmGame/static/js/2.20e8fc98.chunk.js",
     "static/js/2.20e8fc98.chunk.js.map": "/FarmGame/static/js/2.20e8fc98.chunk.js.map",
     "index.html": "/FarmGame/index.html",
-    "precache-manifest.a731ca46a6b0c1d56e202efed6ec582e.js": "/FarmGame/precache-manifest.a731ca46a6b0c1d56e202efed6ec582e.js",
+    "precache-manifest.7acf262917882f0e212d849fc815c93b.js": "/FarmGame/precache-manifest.7acf262917882f0e212d849fc815c93b.js",
     "service-worker.js": "/FarmGame/service-worker.js",
     "static/css/2.5f3a66ff.chunk.css.map": "/FarmGame/static/css/2.5f3a66ff.chunk.css.map",
-    "static/css/main.dca64303.chunk.css.map": "/FarmGame/static/css/main.dca64303.chunk.css.map",
+    "static/css/main.6084db6a.chunk.css.map": "/FarmGame/static/css/main.6084db6a.chunk.css.map",
     "static/js/2.20e8fc98.chunk.js.LICENSE.txt": "/FarmGame/static/js/2.20e8fc98.chunk.js.LICENSE.txt",
     "static/media/Chicken.png": "/FarmGame/static/media/Chicken.24942eb3.png",
     "static/media/Cow.png": "/FarmGame/static/media/Cow.10150a89.png",
@@ -25,7 +25,7 @@
     "static/media/Logo.png": "/FarmGame/static/media/Logo.85b6e403.png",
     "static/media/MainMenuImg.png": "/FarmGame/static/media/MainMenuImg.496add02.png",
     "static/media/Milk.png": "/FarmGame/static/media/Milk.cb9c0393.png",
-    "static/media/Money.png": "/FarmGame/static/media/Money.8523b238.png",
+    "static/media/Money.png": "/FarmGame/static/media/Money.aae0f50d.png",
     "static/media/Shovel.png": "/FarmGame/static/media/Shovel.10ac2535.png",
     "static/media/Wheat.png": "/FarmGame/static/media/Wheat.8686b94e.png"
   },
@@ -33,7 +33,7 @@
     "static/js/runtime-main.b79219f1.js",
     "static/css/2.5f3a66ff.chunk.css",
     "static/js/2.20e8fc98.chunk.js",
-    "static/css/main.dca64303.chunk.css",
-    "static/js/main.90d0a943.chunk.js"
+    "static/css/main.6084db6a.chunk.css",
+    "static/js/main.c9939b3e.chunk.js"
   ]
 }

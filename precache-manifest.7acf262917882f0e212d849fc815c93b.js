@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c6292c8f3defcf5fc13bb5e5ecd99a0f",
+    "revision": "2cc4f4831335a53893329e0038af9108",
     "url": "/FarmGame/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FarmGame/static/css/2.5f3a66ff.chunk.css"
   },
   {
-    "revision": "0bd26d8dbe03a3896238",
-    "url": "/FarmGame/static/css/main.dca64303.chunk.css"
+    "revision": "757855ff56522c7da2a6",
+    "url": "/FarmGame/static/css/main.6084db6a.chunk.css"
   },
   {
     "revision": "ab096838d03da8c4ba1c",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FarmGame/static/js/2.20e8fc98.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bd26d8dbe03a3896238",
-    "url": "/FarmGame/static/js/main.90d0a943.chunk.js"
+    "revision": "757855ff56522c7da2a6",
+    "url": "/FarmGame/static/js/main.c9939b3e.chunk.js"
   },
   {
     "revision": "67eb342bff41e56311b5",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FarmGame/static/media/Milk.cb9c0393.png"
   },
   {
-    "revision": "8523b238c1d8321a5b0b049e10a4131d",
-    "url": "/FarmGame/static/media/Money.8523b238.png"
+    "revision": "aae0f50db8cb96d5966a38792683b1c4",
+    "url": "/FarmGame/static/media/Money.aae0f50d.png"
   },
   {
     "revision": "10ac25356d5e3de2ace8dcdb6ce97996",
