@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d4059dce5c75d61eda3abd742ee57adf",
+    "revision": "3ec268e54a31c37e49cfc00a7e508143",
     "url": "/FarmGame/index.html"
   },
   {
-    "revision": "08ddd6adf4169c47ac25",
+    "revision": "edf7e84356e276af1292",
     "url": "/FarmGame/static/css/2.5f3a66ff.chunk.css"
   },
   {
-    "revision": "59c4b2d8e0c2af58de8d",
-    "url": "/FarmGame/static/css/main.b9be3418.chunk.css"
+    "revision": "89f5b289a887408b134f",
+    "url": "/FarmGame/static/css/main.53e4eb8a.chunk.css"
   },
   {
-    "revision": "08ddd6adf4169c47ac25",
-    "url": "/FarmGame/static/js/2.12d235d5.chunk.js"
+    "revision": "edf7e84356e276af1292",
+    "url": "/FarmGame/static/js/2.2d095de4.chunk.js"
   },
   {
     "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/FarmGame/static/js/2.12d235d5.chunk.js.LICENSE.txt"
+    "url": "/FarmGame/static/js/2.2d095de4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "59c4b2d8e0c2af58de8d",
-    "url": "/FarmGame/static/js/main.c31b72c7.chunk.js"
+    "revision": "89f5b289a887408b134f",
+    "url": "/FarmGame/static/js/main.e001b44e.chunk.js"
   },
   {
     "revision": "67eb342bff41e56311b5",
@@ -46,6 +46,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1e0581a75853fd4c0ec381b1eacaf318",
     "url": "/FarmGame/static/media/Grass.1e0581a7.jpg"
+  },
+  {
+    "revision": "6a4ae32f37ef15dcdb318485e6c0bff3",
+    "url": "/FarmGame/static/media/HarvestChicken.6a4ae32f.png"
+  },
+  {
+    "revision": "0b134577c28fc9ab448f95ce31b91bc0",
+    "url": "/FarmGame/static/media/HarvestCow.0b134577.png"
+  },
+  {
+    "revision": "d7409fb7a9657eafc742d6e272b0aaf2",
+    "url": "/FarmGame/static/media/HarvestWheat.d7409fb7.png"
   },
   {
     "revision": "d9166108a8180b4f886b37eeb0d61545",

@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/FarmGame/static/css/main.b9be3418.chunk.css",
-    "main.js": "/FarmGame/static/js/main.c31b72c7.chunk.js",
-    "main.js.map": "/FarmGame/static/js/main.c31b72c7.chunk.js.map",
+    "main.css": "/FarmGame/static/css/main.53e4eb8a.chunk.css",
+    "main.js": "/FarmGame/static/js/main.e001b44e.chunk.js",
+    "main.js.map": "/FarmGame/static/js/main.e001b44e.chunk.js.map",
     "runtime-main.js": "/FarmGame/static/js/runtime-main.b79219f1.js",
     "runtime-main.js.map": "/FarmGame/static/js/runtime-main.b79219f1.js.map",
     "static/css/2.5f3a66ff.chunk.css": "/FarmGame/static/css/2.5f3a66ff.chunk.css",
-    "static/js/2.12d235d5.chunk.js": "/FarmGame/static/js/2.12d235d5.chunk.js",
-    "static/js/2.12d235d5.chunk.js.map": "/FarmGame/static/js/2.12d235d5.chunk.js.map",
+    "static/js/2.2d095de4.chunk.js": "/FarmGame/static/js/2.2d095de4.chunk.js",
+    "static/js/2.2d095de4.chunk.js.map": "/FarmGame/static/js/2.2d095de4.chunk.js.map",
     "index.html": "/FarmGame/index.html",
-    "precache-manifest.3306437a1967f454fbea2c79318b164b.js": "/FarmGame/precache-manifest.3306437a1967f454fbea2c79318b164b.js",
+    "precache-manifest.28567ff5c1800d56a0b7423374382d97.js": "/FarmGame/precache-manifest.28567ff5c1800d56a0b7423374382d97.js",
     "service-worker.js": "/FarmGame/service-worker.js",
     "static/css/2.5f3a66ff.chunk.css.map": "/FarmGame/static/css/2.5f3a66ff.chunk.css.map",
-    "static/css/main.b9be3418.chunk.css.map": "/FarmGame/static/css/main.b9be3418.chunk.css.map",
-    "static/js/2.12d235d5.chunk.js.LICENSE.txt": "/FarmGame/static/js/2.12d235d5.chunk.js.LICENSE.txt",
+    "static/css/main.53e4eb8a.chunk.css.map": "/FarmGame/static/css/main.53e4eb8a.chunk.css.map",
+    "static/js/2.2d095de4.chunk.js.LICENSE.txt": "/FarmGame/static/js/2.2d095de4.chunk.js.LICENSE.txt",
     "static/media/Chicken.png": "/FarmGame/static/media/Chicken.24942eb3.png",
     "static/media/Cow.png": "/FarmGame/static/media/Cow.72991950.png",
     "static/media/Eggs.png": "/FarmGame/static/media/Eggs.95e7e033.png",
     "static/media/Grain.png": "/FarmGame/static/media/Grain.c554611d.png",
     "static/media/Grass.jpg": "/FarmGame/static/media/Grass.1e0581a7.jpg",
+    "static/media/HarvestChicken.png": "/FarmGame/static/media/HarvestChicken.6a4ae32f.png",
+    "static/media/HarvestCow.png": "/FarmGame/static/media/HarvestCow.0b134577.png",
+    "static/media/HarvestWheat.png": "/FarmGame/static/media/HarvestWheat.d7409fb7.png",
     "static/media/Logo.png": "/FarmGame/static/media/Logo.d9166108.png",
     "static/media/MainMenuImg.jpg": "/FarmGame/static/media/MainMenuImg.915084a8.jpg",
     "static/media/Milk.png": "/FarmGame/static/media/Milk.cb9c0393.png",
@@ -29,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.b79219f1.js",
     "static/css/2.5f3a66ff.chunk.css",
-    "static/js/2.12d235d5.chunk.js",
-    "static/css/main.b9be3418.chunk.css",
-    "static/js/main.c31b72c7.chunk.js"
+    "static/js/2.2d095de4.chunk.js",
+    "static/css/main.53e4eb8a.chunk.css",
+    "static/js/main.e001b44e.chunk.js"
   ]
 }
