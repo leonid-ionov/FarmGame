@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9908dd0ff52cf8ae0f97a8dc3f362706",
+    "revision": "e1b81c954f1edb220392ba0fe4fdb282",
     "url": "/FarmGame/index.html"
   },
   {
-    "revision": "ab096838d03da8c4ba1c",
+    "revision": "df63a21d7c83318970b8",
     "url": "/FarmGame/static/css/2.5f3a66ff.chunk.css"
   },
   {
-    "revision": "054fbbfd574eb5378f20",
+    "revision": "d62a315234043fd44251",
     "url": "/FarmGame/static/css/main.6084db6a.chunk.css"
   },
   {
-    "revision": "ab096838d03da8c4ba1c",
-    "url": "/FarmGame/static/js/2.20e8fc98.chunk.js"
+    "revision": "df63a21d7c83318970b8",
+    "url": "/FarmGame/static/js/2.a8f5e3f6.chunk.js"
   },
   {
     "revision": "29eb69a08ea4198f7b46e1db8a3d5045",
-    "url": "/FarmGame/static/js/2.20e8fc98.chunk.js.LICENSE.txt"
+    "url": "/FarmGame/static/js/2.a8f5e3f6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "054fbbfd574eb5378f20",
-    "url": "/FarmGame/static/js/main.eb1d3934.chunk.js"
+    "revision": "d62a315234043fd44251",
+    "url": "/FarmGame/static/js/main.b597063c.chunk.js"
   },
   {
     "revision": "67eb342bff41e56311b5",
