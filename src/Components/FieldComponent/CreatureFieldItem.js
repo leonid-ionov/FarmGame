@@ -7,7 +7,7 @@ class CreatureFieldItem extends React.Component {
         growTime: 0,
         feedCount: 0,
         hunger: true,
-        message: 'Hunger!',
+        message: 'HUNGER!',
         harvest: null
     }
 

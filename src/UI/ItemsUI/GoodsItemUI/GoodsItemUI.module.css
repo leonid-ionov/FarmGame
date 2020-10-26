@@ -9,10 +9,11 @@
     align-self: center;
     justify-self: center;
     height: 90px;
-    width: 70%;
+    width: 90px;
 }
 
 .goodsItem .text {
+    width: 100px;
     align-self: center;
     justify-self: center;
 }

@@ -8,8 +8,8 @@ function GoodsItemUI({goodsImage, goodsType, goodsCount, itemSelected, goodsPric
              style={itemSelected === goodsType ? {border: '5px solid darkred'} : {border: '5px solid black'}}>
             <Image className={s.goods} src={goodsImage}/>
             <div className={s.text}>
-                    <h5>{`COUNT: ${goodsCount}`}</h5>
-                {!!goodsPrice && <h5>{`PRICE: ${goodsPrice}`}</h5>}
+                    <h6>{`COUNT: ${goodsCount}`}</h6>
+                {!!goodsPrice && <h6>{`PRICE: ${goodsPrice}`}</h6>}
             </div>
         </div>
     )

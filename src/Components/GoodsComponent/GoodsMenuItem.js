@@ -12,7 +12,8 @@ class GoodsMenuItem extends React.Component {
         return (
             <div onClick={this.selectGoodsMethod}>
                 <GoodsItemUI itemSelected={this.props.selectedGoods.type}
-                             itemSelectedForFeed={this.props.selectedGoods.forFeed}
+                             itemForFeed={this.props.goodsItem.feed}
+                             itemForSale={this.props.goodsItem.sale}
                              goodsType={this.props.goodsItem.type}
                              goodsImage={this.props.goodsItem.image}
                              goodsCount={this.props.goodsItem.count}

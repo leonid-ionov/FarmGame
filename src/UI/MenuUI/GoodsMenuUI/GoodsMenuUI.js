@@ -8,6 +8,8 @@ const GoodsMenuUI = ({sellItem, selectedGoods, chooseGoodsForAction, chooseCreat
     return (
         <div className={s.goodsMenu}>
             {Object.keys(goodsItems).map(i => <div className={s.item}>
+                {goodsItems[i].feed && <text>FEED</text>}
+                {goodsItems[i].sale && <text>SALE</text>}
                 <GoodsMenuItem goodsItem={goodsItems[i]}
                                selectedGoods={selectedGoods}
                                chooseCreature={chooseCreature}
@@ -16,7 +18,7 @@ const GoodsMenuUI = ({sellItem, selectedGoods, chooseGoodsForAction, chooseCreat
             <div className={s.buttons}>
                 {selectedGoods.forFeed && <Button variant="dark"
                                                   disabled={selectedGoods.forFeed} size='lg'>
-                                                  {'Tap into creature cell to feed'}</Button>}
+                                                  {'Click on a creature cell to feed'}</Button>}
                 {selectedGoods.forSale && < Button onClick={() => sellItem()}
                                                    disabled={!selectedGoods.forSale}
                                                    variant='dark' size='lg'>Sell goods</Button>}

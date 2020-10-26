@@ -15,7 +15,7 @@ const CreatureMenuUI = ({creatureItems, chooseGoodsForAction, selectedCreature, 
             {!!selectedCreature &&
             <div style={{width: '210px'}}>
                 <Button variant="dark" disabled={true} size='lg'>
-                    Tap into field cell to buy or remove creature
+                    Click on the field to buy or remove a creature
                 </Button>
             </div>}
         </div>

@@ -9,7 +9,7 @@ function CreatureItemUI({creaturesImage, creatureType, creaturePrice, selectedCr
             <Image className={s.creature} src={creaturesImage}/>
             <div className={s.text}>
                 {!!creaturePrice ? <h6> {`PRICE: ${creaturePrice}`}</h6> :
-                    <h6>REMOVE CREATURE</h6>}
+                    <h6>REMOVE A CREATURE</h6>}
             </div>
         </div>
     )
