@@ -12,8 +12,6 @@ let initialState = {
 }
 
 const CHANGE_FIELD_ITEM_TYPE = 'CHANGE_FIELD_ITEM_TYPE',
-    HARVEST_HAS_GROWN = 'HARVEST_HAS_GROWN',
-    HARVEST_HAS_TAKEN = 'HARVEST_HAS_TAKEN',
 
     fieldReducer = (state = initialState, action) => {
         switch (action.type) {
@@ -21,16 +19,6 @@ const CHANGE_FIELD_ITEM_TYPE = 'CHANGE_FIELD_ITEM_TYPE',
                 return {
                     ...state,
                     field: updateObjectInArray (state.field,action.id,'id',{type:action.newType})
-                }
-            case HARVEST_HAS_GROWN :
-                return {
-                    ...state,
-                    field:updateObjectInArray (state.field,action.id,'id',{harvest:action.harvestType})
-                }
-            case HARVEST_HAS_TAKEN:
-                return {
-                    ...state,
-                    field:updateObjectInArray (state.field,action.id,'id',{harvest:null})
                 }
             default:
                 return state
