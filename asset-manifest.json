@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/FarmGame/static/css/main.9c419943.chunk.css",
-    "main.js": "/FarmGame/static/js/main.e809b816.chunk.js",
-    "main.js.map": "/FarmGame/static/js/main.e809b816.chunk.js.map",
+    "main.js": "/FarmGame/static/js/main.d3bcfb96.chunk.js",
+    "main.js.map": "/FarmGame/static/js/main.d3bcfb96.chunk.js.map",
     "runtime-main.js": "/FarmGame/static/js/runtime-main.b79219f1.js",
     "runtime-main.js.map": "/FarmGame/static/js/runtime-main.b79219f1.js.map",
     "static/css/2.5f3a66ff.chunk.css": "/FarmGame/static/css/2.5f3a66ff.chunk.css",
-    "static/js/2.a8f5e3f6.chunk.js": "/FarmGame/static/js/2.a8f5e3f6.chunk.js",
-    "static/js/2.a8f5e3f6.chunk.js.map": "/FarmGame/static/js/2.a8f5e3f6.chunk.js.map",
+    "static/js/2.5af965c9.chunk.js": "/FarmGame/static/js/2.5af965c9.chunk.js",
+    "static/js/2.5af965c9.chunk.js.map": "/FarmGame/static/js/2.5af965c9.chunk.js.map",
     "index.html": "/FarmGame/index.html",
-    "precache-manifest.01e66fbc963afbc7e4cc2d526395d3fb.js": "/FarmGame/precache-manifest.01e66fbc963afbc7e4cc2d526395d3fb.js",
+    "precache-manifest.2debce963d970fe099e2b4b0e631aa0a.js": "/FarmGame/precache-manifest.2debce963d970fe099e2b4b0e631aa0a.js",
     "service-worker.js": "/FarmGame/service-worker.js",
     "static/css/2.5f3a66ff.chunk.css.map": "/FarmGame/static/css/2.5f3a66ff.chunk.css.map",
     "static/css/main.9c419943.chunk.css.map": "/FarmGame/static/css/main.9c419943.chunk.css.map",
-    "static/js/2.a8f5e3f6.chunk.js.LICENSE.txt": "/FarmGame/static/js/2.a8f5e3f6.chunk.js.LICENSE.txt",
+    "static/js/2.5af965c9.chunk.js.LICENSE.txt": "/FarmGame/static/js/2.5af965c9.chunk.js.LICENSE.txt",
     "static/media/Chicken.png": "/FarmGame/static/media/Chicken.224efe02.png",
     "static/media/Cow.png": "/FarmGame/static/media/Cow.d421f99b.png",
     "static/media/Eggs.png": "/FarmGame/static/media/Eggs.e9a15d07.png",
@@ -30,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.b79219f1.js",
     "static/css/2.5f3a66ff.chunk.css",
-    "static/js/2.a8f5e3f6.chunk.js",
+    "static/js/2.5af965c9.chunk.js",
     "static/css/main.9c419943.chunk.css",
-    "static/js/main.e809b816.chunk.js"
+    "static/js/main.d3bcfb96.chunk.js"
   ]
 }
