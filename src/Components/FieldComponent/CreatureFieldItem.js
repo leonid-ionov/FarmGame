@@ -59,6 +59,16 @@ class CreatureFieldItem extends React.Component {
     }
 
     feedCreatureMethod = () => {
+        if (this.state.feedCount === this.props.creatureItem.satietyCount) {
+            this.setState({
+                message: 'I\'M FOOL!'
+            })
+            setTimeout(() => {
+                this.setState({
+                    message: ''
+                })
+            }, 1000)
+        } else
         if (this.props.feedCreature(this.props.creatureItem.feedType, this.props.creatureItem.type)) {
             this.setState({
                 feedCount: this.state.feedCount + 1,
@@ -74,8 +84,9 @@ class CreatureFieldItem extends React.Component {
                     hunger: false
                 })
                 this.hungerTimer()
+                if(!this.state.harvest) {
                 this.creatureGrowTimer()
-            }
+            }}
         }
     }
 
@@ -95,6 +106,8 @@ class CreatureFieldItem extends React.Component {
             <div>
                 <CreatureFieldItemUI growTime={this.state.growTime}
                                      message={this.state.message}
+                                     feedCount={this.state.feedCount}
+                                     satietyCount={this.props.creatureItem.satietyCount}
                                      creatureImage={this.props.creatureItem.image}
                                      harvestImage={this.props.creatureItem.harvestImage}
                                      harvest={this.state.harvest}
