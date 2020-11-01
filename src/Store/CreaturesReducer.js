@@ -1,5 +1,4 @@
 import ChickenImage from '../Assets/Images/Creatures/Chicken.png'
-import ShovelImage from '../Assets/Images/Creatures/Shovel.png'
 import CowImage from '../Assets/Images/Creatures/Cow.png'
 import WheatImage from '../Assets/Images/Creatures/Wheat.png'
 import HarvestWheatImage from '../Assets/Images/Creatures/Harvest/HarvestWheat.png'
@@ -9,17 +8,18 @@ import HarvestChickenImage from '../Assets/Images/Creatures/Harvest/HarvestChick
 
 let initialState = {
     wheat: {
-        type: 'wheat',
+        name:'wheat',
+        type: 'plant',
         price: 50,
         growTime: 10,
-        feedTime: null,
-        feedType: null,
+        satietyCount:0,
         harvestType:'grain',
         image: WheatImage,
         harvestImage:HarvestWheatImage
     },
     chicken: {
-        type: 'chicken',
+        name:'chicken',
+        type: 'animal',
         price: 100,
         growTime: 10,
         feedTime: 30,
@@ -30,7 +30,8 @@ let initialState = {
         harvestImage:HarvestChickenImage
     },
     cow: {
-        type: 'cow',
+        name:'cow',
+        type: 'animal',
         price: 150,
         growTime: 20,
         feedTime: 20,
@@ -39,11 +40,6 @@ let initialState = {
         harvestType:'milk',
         image: CowImage,
         harvestImage:HarvestCowImage
-    },
-    shovel: {
-        type: 'shovel',
-        image: ShovelImage,
-        price: 0
     }
 }
 

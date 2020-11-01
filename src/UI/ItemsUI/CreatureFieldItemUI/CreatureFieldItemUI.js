@@ -24,7 +24,7 @@ const CreatureFieldItemUI = ({creatureImage, feedCount, satietyCount, feedCreatu
             {!!harvest &&
             <div onClick={() => takeHarvestMethod()} className={s.harvest}><img src={harvestImage} alt={''}/></div>}
             {!!message && <div className={s.text} onClick={feedCreature}>
-                <text>{message}</text>
+                <div>{message}</div>
             </div>}
             {!!feedCount &&
             <div class={'progress-bar'} style={progressBarrStyle}><ProgressBar now={feedCount} max={satietyCount}/></div>}

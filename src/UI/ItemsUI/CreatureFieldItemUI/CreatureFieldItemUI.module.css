@@ -25,6 +25,7 @@
     color: red;
     position: absolute;
     align-self: center;
+    width: 90px;
     justify-self: center;
     z-index: 3;
     font-weight: bolder;

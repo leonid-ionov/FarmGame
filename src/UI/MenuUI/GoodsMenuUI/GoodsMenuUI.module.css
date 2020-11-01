@@ -9,9 +9,9 @@
     justify-self: center;
 }
 
-.goodsMenu text {
+.goodsMenu .text {
     align-self: center;
-    font-weight: bold;
+text-transform: uppercase;
     margin-bottom: 5px;
 }
 
