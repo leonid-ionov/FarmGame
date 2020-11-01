@@ -6,27 +6,36 @@ class CreatureFieldItem extends React.Component {
     state = {
         growTime: 0,
         feedCount: 0,
-        hunger: true,
-        message: 'HUNGER!',
+        hunger: false,
+        message: '',
         harvest: null
     }
 
-    takeHarvestMethod = () => {
+    creatureMessages (text) {
+        this.setState({message: text})
+        setTimeout(() => {
+            this.setState({
+                message: ''
+            })
+        }, 1000)
+    }
+
+    takeHarvestMethod () {
         this.props.takeHarvest(this.state.harvest)
         this.setState({harvest: null})
-        if(!this.state.hunger) {
+        if (!this.state.hunger) {
             this.creatureGrowTimer()
         }
     }
 
-    creatureGrowTimer = () => {
+    creatureGrowTimer () {
         let count = this.state.growTime
         const growTimePerPercent = this.props.creatureItem.growTime * 20,
             timerId = setInterval(
                 () => {
                     count += 2
                     this.setState({growTime: count})
-                    if (count === 100) {
+                    if (count >= 98) {
                         clearInterval(timerId)
                         this.setState({
                             growTime: 0,
@@ -42,7 +51,7 @@ class CreatureFieldItem extends React.Component {
             )
     }
 
-    hungerTimer = () => {
+    hungerTimer () {
         const fullTimePerPercent = this.props.creatureItem.feedTime * 1000,
             timerId = setInterval(() => {
                 this.setState({
@@ -52,40 +61,27 @@ class CreatureFieldItem extends React.Component {
                     clearInterval(timerId)
                     this.setState({
                         hunger: true,
-                        message: 'HUNGER!'
+                        message: 'HUNGER'
                     })
                 }
             }, fullTimePerPercent)
     }
 
-    feedCreatureMethod = () => {
-        if (this.props.feedCreature(this.props.creatureItem.feedType, this.props.creatureItem.type)) {
-            this.setState({
-                feedCount: this.state.feedCount + 1,
-                message: 'YUMMY'
-            })
-            setTimeout(() => {
-                this.setState({
-                    message: ''
-                })
-            }, 1000)
+    feedCreatureMethod () {
+        if (this.state.feedCount === this.props.creatureItem.satietyCount) {
+            this.creatureMessages('I\'M FOOL')
+        } else if (this.props.feedCreature(this.props.creatureItem.feedType)) {
+            this.creatureMessages('YUMMY')
+            this.setState({feedCount:this.state.feedCount+1})
             if (this.state.hunger) {
                 this.setState({
-                    hunger: false
+                    hunger: false,
                 })
                 this.hungerTimer()
-                this.creatureGrowTimer()
+                if (!this.state.harvest) {
+                    this.creatureGrowTimer()
+                }
             }
-        }
-    }
-
-    componentDidMount() {
-        if (!this.props.creatureItem.feedType) {
-            this.setState({
-                hunger: false,
-                message: ''
-            })
-            this.creatureGrowTimer()
         }
     }
 
@@ -95,11 +91,13 @@ class CreatureFieldItem extends React.Component {
             <div>
                 <CreatureFieldItemUI growTime={this.state.growTime}
                                      message={this.state.message}
+                                     feedCount={this.state.feedCount}
+                                     satietyCount={this.props.creatureItem.satietyCount}
                                      creatureImage={this.props.creatureItem.image}
                                      harvestImage={this.props.creatureItem.harvestImage}
                                      harvest={this.state.harvest}
-                                     feedCreature={this.feedCreatureMethod}
-                                     takeHarvestMethod={this.takeHarvestMethod}/>
+                                     feedCreature={this.feedCreatureMethod.bind(this)}
+                                     takeHarvestMethod={this.takeHarvestMethod.bind(this)}/>
             </div>
         )
     }

@@ -17,45 +17,41 @@ import { Badge } from 'react-bootstrap'
 class NewGame extends React.Component {
     state = {error: null}
     sellItem = () => {
-        if (this.props.selectedGoods.forSale) {
-           try {this.props.sellItemChecker(this.props.selectedGoods.type)}
-           catch (error) {
-               this.setState({error: error.message})
-           }
-            this.props.chooseGoodsForAction(null, false, false)
+        try {
+            this.props.sellItemChecker(this.props.selectedGoods.name)
+        } catch (error) {
+            this.setState({error: error.message})
         }
+        this.props.chooseGoodsForAction(null, false, false)
     }
 
     buyCreature = (id) => {
-        if (!!this.props.selectedCreature) {
-            try {
-                this.props.buyCreatureChecker(this.props.selectedCreature)
-                if (this.props.selectedCreature === 'shovel') {
-                    this.props.changeFieldItemType(id, 'empty')
-                } else {
-                    this.props.changeFieldItemType(id, this.props.selectedCreature)
-                }
-            } catch (error) {
-                this.setState({error: error.message})
-                this.props.chooseCreature(null)
-            }
+        try {
+            this.props.buyCreatureChecker(this.props.selectedCreature.name)
+            this.props.changeFieldItemType(id, this.props.selectedCreature)
+        } catch (error) {
+            this.setState({error: error.message})
+            this.props.chooseCreature(null, null)
         }
     }
 
-    feedCreatureMethod = (feedType, creatureType) => {
-        if (this.props.selectedGoods.forFeed && feedType === this.props.selectedGoods.type) {
+    deleteCreatureFromField = (id) => {
+        if (this.props.selectedGoods.type === 'shovel') {
+            this.props.changeFieldItemType(id, {type: 'empty', name: null})
+        }
+    }
+
+    feedCreatureMethod = (feedType) => {
+        if (this.props.selectedGoods.type === 'feed' && feedType === this.props.selectedGoods.name) {
             try {
                 this.props.feedCreatureChecker(feedType)
                 return true
             } catch (error) {
                 this.setState({error: error.message})
-                this.props.chooseGoodsForAction(null, false, false)
+                this.props.chooseGoodsForAction(null, null)
                 return false
             }
-        } else if (creatureType === 'wheat') {
-            this.setState({error: 'WHEAT DOES NOT HUNGER'})
-            return false
-        } else {
+        } else if (this.props.selectedGoods.type !== 'shovel') {
             this.setState({error: 'CHOOSE FEED'})
             return false
         }
@@ -80,6 +76,7 @@ class NewGame extends React.Component {
                 </div>
                 <div className={s.field}>
                     <FieldMenuUI selectedCreature={this.props.selectedCreature}
+                                 deleteCreatureFromField={this.deleteCreatureFromField}
                                  creatureItems={this.props.creatureItems}
                                  buyCreature={this.buyCreature.bind(this)}
                                  fieldItems={this.props.fieldItems}

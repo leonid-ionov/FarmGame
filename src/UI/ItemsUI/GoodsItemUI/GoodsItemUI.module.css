@@ -1,6 +1,6 @@
 .goodsItem {
     display:grid;
-    grid-template-areas: 'goods text';
+    grid-template-columns: 110px 140px ;
     height: 100px;
     width: 250px;
 }
@@ -13,7 +13,7 @@
 }
 
 .goodsItem .text {
-    width: 100px;
+    width: 140px;
     align-self: center;
     justify-self: center;
 }

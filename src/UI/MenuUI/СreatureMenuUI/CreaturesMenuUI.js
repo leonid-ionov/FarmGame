@@ -12,10 +12,10 @@ const CreatureMenuUI = ({creatureItems, chooseGoodsForAction, selectedCreature, 
                                   selectedCreature={selectedCreature}
                                   chooseGoodsForAction={chooseGoodsForAction}/>
             </div>)}
-            {!!selectedCreature &&
+            {!!selectedCreature.name &&
             <div style={{width: '210px'}}>
                 <Button variant="dark" disabled={true} size='lg'>
-                    Click on the field to buy or remove a creature
+                    Click on the field to buy a creature
                 </Button>
             </div>}
         </div>
