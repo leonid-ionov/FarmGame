@@ -106,7 +106,7 @@ export const sellItem = (itemForSale) => ({type: SELL_ITEM, itemForSale}),
             if (moneyCount >= creaturePrice) {
                 dispatch(buyCreature(creaturePrice))
             } else throw new Error('NEED MORE GOLD')
-        }
+        } else throw new Error('CHOOSE CREATURE TO BUY')
     },
     feedCreatureChecker = (feedType) => (dispatch, getState) => {
         const feedCount = getState().goodsReducer[feedType].count

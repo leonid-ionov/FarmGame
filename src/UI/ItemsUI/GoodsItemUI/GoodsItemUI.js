@@ -3,7 +3,6 @@ import s from './GoodsItemUI.module.css'
 import { Image } from 'react-bootstrap'
 
 function GoodsItemUI({goodsImage, goodsName, description, goodsCount, itemSelected, goodsPrice}) {
-    console.log(description)
     return (
         <div className={s.goodsItem}
              style={itemSelected === goodsName ? {border: '5px solid darkred'} : {border: '5px solid black'}}>

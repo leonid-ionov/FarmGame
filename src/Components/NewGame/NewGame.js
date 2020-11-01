@@ -61,7 +61,7 @@ class NewGame extends React.Component {
         if (prevState.error !== this.state.error) {
             setTimeout(() => {
                 this.setState({error: null})
-            }, 10000)
+            }, 3000)
         }
     }
 
