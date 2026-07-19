@@ -1,8 +1,8 @@
 .creatureItem{
-    display:grid;
+    display:flex;
     height: 130px;
-    width: 210px;
-    grid-template-areas: 'creature text';
+    width: 230px;
+    padding: 10px;
 }
 
 .creatureItem .creature {

@@ -3,7 +3,8 @@
   grid-template-areas:
 'nav'
 'content ';
-  grid-template-rows: 60px 870px;
+  grid-template-rows: 60px minmax(0, 1fr);
+  height: 100vh;
 }
 
 .app-wrapper-nav {
@@ -14,4 +15,6 @@
   padding-top: 10px;
   grid-area: content;
   background-color: darkgrey;
+  min-height: 0;
+  overflow: auto;
 }

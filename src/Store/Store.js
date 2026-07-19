@@ -15,7 +15,7 @@ const appReducers = combineReducers({
 
     START_NEW_GAME = 'START_NEW_GAME',
 
-    rootReducer = (state = appReducers, action) => {
+    rootReducer = (state, action) => {
         if (action.type === START_NEW_GAME) {
             state = undefined
         }
