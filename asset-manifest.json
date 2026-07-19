@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/FarmGame/static/css/main.2547fae8.chunk.css",
-    "main.js": "/FarmGame/static/js/main.9c80f2f8.chunk.js",
-    "main.js.map": "/FarmGame/static/js/main.9c80f2f8.chunk.js.map",
-    "runtime-main.js": "/FarmGame/static/js/runtime-main.b79219f1.js",
-    "runtime-main.js.map": "/FarmGame/static/js/runtime-main.b79219f1.js.map",
-    "static/css/2.5f3a66ff.chunk.css": "/FarmGame/static/css/2.5f3a66ff.chunk.css",
-    "static/js/2.bfffc3d6.chunk.js": "/FarmGame/static/js/2.bfffc3d6.chunk.js",
-    "static/js/2.bfffc3d6.chunk.js.map": "/FarmGame/static/js/2.bfffc3d6.chunk.js.map",
+    "main.css": "/FarmGame/static/css/main.d60225ec.chunk.css",
+    "main.js": "/FarmGame/static/js/main.f4d50005.chunk.js",
+    "main.js.map": "/FarmGame/static/js/main.f4d50005.chunk.js.map",
+    "runtime-main.js": "/FarmGame/static/js/runtime-main.25a983ec.js",
+    "runtime-main.js.map": "/FarmGame/static/js/runtime-main.25a983ec.js.map",
+    "static/css/2.52bf1818.chunk.css": "/FarmGame/static/css/2.52bf1818.chunk.css",
+    "static/js/2.af03d2cd.chunk.js": "/FarmGame/static/js/2.af03d2cd.chunk.js",
+    "static/js/2.af03d2cd.chunk.js.map": "/FarmGame/static/js/2.af03d2cd.chunk.js.map",
     "index.html": "/FarmGame/index.html",
-    "precache-manifest.a9eb64e58b4434225377598b99c28804.js": "/FarmGame/precache-manifest.a9eb64e58b4434225377598b99c28804.js",
+    "precache-manifest.067cf6688f912b0bbb3740d8751b69a0.js": "/FarmGame/precache-manifest.067cf6688f912b0bbb3740d8751b69a0.js",
     "service-worker.js": "/FarmGame/service-worker.js",
-    "static/css/2.5f3a66ff.chunk.css.map": "/FarmGame/static/css/2.5f3a66ff.chunk.css.map",
-    "static/css/main.2547fae8.chunk.css.map": "/FarmGame/static/css/main.2547fae8.chunk.css.map",
-    "static/js/2.bfffc3d6.chunk.js.LICENSE.txt": "/FarmGame/static/js/2.bfffc3d6.chunk.js.LICENSE.txt",
+    "static/css/2.52bf1818.chunk.css.map": "/FarmGame/static/css/2.52bf1818.chunk.css.map",
+    "static/css/main.d60225ec.chunk.css.map": "/FarmGame/static/css/main.d60225ec.chunk.css.map",
+    "static/js/2.af03d2cd.chunk.js.LICENSE.txt": "/FarmGame/static/js/2.af03d2cd.chunk.js.LICENSE.txt",
     "static/media/Chicken.png": "/FarmGame/static/media/Chicken.224efe02.png",
     "static/media/Cow.png": "/FarmGame/static/media/Cow.d421f99b.png",
     "static/media/Eggs.png": "/FarmGame/static/media/Eggs.e9a15d07.png",
@@ -28,10 +28,10 @@
     "static/media/Wheat.png": "/FarmGame/static/media/Wheat.4ebfd340.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b79219f1.js",
-    "static/css/2.5f3a66ff.chunk.css",
-    "static/js/2.bfffc3d6.chunk.js",
-    "static/css/main.2547fae8.chunk.css",
-    "static/js/main.9c80f2f8.chunk.js"
+    "static/js/runtime-main.25a983ec.js",
+    "static/css/2.52bf1818.chunk.css",
+    "static/js/2.af03d2cd.chunk.js",
+    "static/css/main.d60225ec.chunk.css",
+    "static/js/main.f4d50005.chunk.js"
   ]
 }
